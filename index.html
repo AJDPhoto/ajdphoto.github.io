@@ -1,13 +1,86 @@
-<!doctype html>
+<h1>AJD Photo — Test</h1>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AJD Photo</title>
+  <meta name="description" content="Photography portfolio and visual storytelling." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-  <h1>Al Dauphinais</h1>
-  <p>Photography & Visual Storytelling</p>
-  <p>Welcome — portfolio coming soon.</p>
+  <div class="wrap">
+    <header class="nav">
+      <div class="brand">
+        <b>AJD</b>
+        <span>Al Dauphinais — Photography</span>
+      </div>
+      <nav class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="kicker">Visual storytelling • Coastal light • Everyday finds</div>
+      <h1>Photographs that feel like pages from a story.</h1>
+      <p class="lead">
+        I shoot lighthouses, nature, and the small details people walk past—turning moments into
+        quiet, lasting scenes.
+      </p>
+
+      <div class="actions">
+        <a class="btn" href="#work">View Portfolio ↓</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+
+      <div class="card">
+        <!-- This is a placeholder “hero image” area for now.
+             Next step we’ll replace it with YOUR photo. -->
+        <div class="heroimg" aria-label="Hero image placeholder"></div>
+
+        <div class="section" id="about">
+          <h2>About</h2>
+          <p>
+            Based in North Carolina. I love strong composition, clean lines, and light that tells you
+            what time of day it is without a clock.
+          </p>
+        </div>
+
+        <section class="grid" id="work" aria-label="Featured work">
+          <div class="tile">
+            <div class="ph"></div>
+            <div class="cap">Lighthouses</div>
+          </div>
+          <div class="tile">
+            <div class="ph"></div>
+            <div class="cap">Nature</div>
+          </div>
+          <div class="tile">
+            <div class="ph"></div>
+            <div class="cap">Flea Market Stories</div>
+          </div>
+          <div class="tile">
+            <div class="ph"></div>
+            <div class="cap">Cats & Windowsills</div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer" id="contact">
+        <div>© <span id="y"></span> AJD Photo</div>
+        <div>
+          <a href="mailto:youremail@example.com">youremail@example.com</a>
+          &nbsp;•&nbsp;
+          <a href="#">Instagram</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
