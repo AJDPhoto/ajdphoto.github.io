@@ -113,14 +113,14 @@ h1{
 }
 
 .heroimg{
-  aspect-ratio: 16 / 8;
-  width:100%;
-  display:block;
-  background:
-    linear-gradient(90deg, rgba(255,255,255,.08), rgba(255,255,255,0)),
-    radial-gradient(900px 240px at 30% 20%, rgba(255,255,255,.10), transparent 60%),
-    #0f1220;
+  width: 100%;
+  max-height: 480px;          /* keeps it refined */
+  object-fit: cover;
+  object-position: center 20%; /* favors face + camera */
+  display: block;
+  background: #0f1220;
 }
+
 
 .section{
   padding: 18px 18px 12px;
